@@ -47,7 +47,7 @@ const priceNumber = () => {
     const element = product.innerText.split('$')[1];
     value += parseFloat(element);
   });
-  pItem.innerText = value;
+  pItem.innerText = value.toFixed(2);
 };
 
 // Função do evento de click que apaga itens do cart
@@ -128,12 +128,6 @@ window.onload = () => {
   initialize();
   init('Orfanato da srta peregrine');
 };
-
-// Referências a code-review: 
-//  Mario Junior: https://github.com/tryber/sd-018-b-project-shopping-cart/pull/80
-// Paolo Fullone: https://github.com/tryber/sd-018-b-project-shopping-cart/pull/3
-// Laecio Silva: https://github.com/tryber/sd-018-b-project-shopping-cart/pull/87
-// Leo Oliveira: https://github.com/tryber/sd-018-b-project-shopping-cart/pull/36
 
 // Referências: 
 //  Pegar as chaves do localStorage: https://qastack.com.br/programming/8419354/get-html5-localstorage-keys
